@@ -1,9 +1,10 @@
 const withLess = require('@zeit/next-less')
+const withImages = require('next-images')
 
 /**
  * next的配置文件，支持配置嵌套
  */
-module.exports = withLess({
+module.exports = withImages(withLess({
   webpack(config, options) {
     // if (options.isServer) config.plugins.push(new ForkTsCheckerWebpackPlugin())
     config['module']['rules'].push({
@@ -19,4 +20,4 @@ module.exports = withLess({
     });
     return config
   }
-})
+}));
