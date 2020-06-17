@@ -6,21 +6,10 @@ const Olddriver = dynamic(import('../../components/OldDriver'),{
 })
 
 export default () => {
+    console.log("我执行了 home.jsx")
     return (
-        <HeaderFooter active="home">
-            <div id="homepage">
-                <Olddriver></Olddriver>
-            </div>
-            <style>{`
-        #homepage {
-          width: 100%;
-          height:600px;
-          background-color: #f7f7f7;
-          display: flex;
-          justify-content: center;
-          align-items: center
-        }
-      `}</style>
-        </HeaderFooter>
+        <div>
+            123123123123
+        </div>
     )
 }
