@@ -54,7 +54,7 @@ export default class MyApp extends App {
                 <Component {...pageProps} />
               </div>
               <Footer className="footer">
-                © 2019 <Icon type="user"/> andd
+                © 2020 <Icon type="user"/> andd
               </Footer>
             </div>
           </Col>

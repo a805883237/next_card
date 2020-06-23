@@ -1,0 +1,304 @@
+.cl {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  line-height: 0
+}
+
+.cf:before, .cf:after {
+  content: '';
+  display: table
+}
+
+.cf:after {
+  clear: both
+}
+
+.cf {
+  *zoom: 1
+}
+
+.mod_404 .mod_bd {
+  margin-bottom: 50px
+}
+
+.mod_404 .child_main {
+  margin-bottom: 30px;
+  min-width:640px; // 适配
+}
+
+.mod_404 .child_box {
+  position: relative;
+  z-index: 100;
+  width: 640px;
+  padding: 30px;
+  border-radius: 30px;
+  margin: 0 auto;
+  background: #fff;
+  zoom: 1
+}
+
+.mod_404 .child_box .child_avatar {
+  float: left;
+  width: 160px;
+  height: 216px;
+  margin-right: 20px;
+  background: #f0f0f0
+}
+
+.mod_404 .child_box .child_avatar img {
+  width: 160px
+}
+
+.mod_404 .child_box .child_info {
+  float: left;
+  width: 460px;
+  overflow: hidden;
+  font-size: 14px
+}
+
+.mod_404 .child_box .child_info .info_item {
+  line-height: 32px
+}
+
+.mod_404 .child_box .child_info .info_name {
+  margin-bottom: 10px;
+  font-size: 18px
+}
+
+.mod_404 .child_box .child_info .info_name .name_inner {
+  margin-right: 5px
+}
+
+.mod_404 .child_box .child_info .info_sex {
+  font-weight: 500
+}
+
+.mod_404 .child_box .child_info .info_desc {
+  height: 72px;
+  line-height: 24px;
+  overflow: hidden
+}
+
+.mod_404 .child_box .child_info .info_lbl {
+  color: #666
+}
+
+.mod_404 .child_box .link_view {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 28px;
+  line-height: 30px;
+  color: #666
+}
+
+.mod_404 .child_box .child_in {
+  display: block
+}
+
+.mod_404 .child_box .child_out {
+  display: none
+}
+
+.mod_404 .child_bottom {
+  position: relative;
+  zoom: 1
+}
+
+.mod_404 .child_bottom .logo_list {
+  font-size: 0
+}
+
+.mod_404 .child_bottom .logo_list li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  height: 34px;
+  margin-right: 12px;
+  vertical-align: top
+}
+
+.mod_404_children ul {
+  height: 105px;
+  overflow:auto;
+  white-space:nowrap;
+  text-align: center;
+  font-size: 0
+}
+
+.mod_404_children li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  margin: 10px;
+  overflow: hidden;
+  border: 5px solid transparent;
+  opacity: .8
+}
+
+.mod_404_children li.current {
+  opacity: 1;
+  border-color: #6eaf08
+}
+
+.mod_404_children li img {
+  width: 80px;
+  cursor: pointer
+}
+
+.mod_404_children li a {
+  display: table-cell;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background: #fff
+}
+
+.mod_404_children .on_select {
+  box-shadow: 0 0 15px #f00
+}
+
+@media screen and (max-width: 720px) {
+
+  .mod_404 .child_main {
+    margin-bottom: 10px
+  }
+
+  .mod_404 .mod_bd {
+    margin-bottom: 20px
+  }
+
+
+  .mod_404 .child_box {
+    width: auto;
+    border-radius: 0;
+    background: rgba(256, 256, 256, 0.8)
+  }
+
+  .mod_404 .child_box .child_avatar {
+    float: none;
+    width: auto;
+    height: auto;
+    background: 0
+  }
+
+  .mod_404 .child_box .child_avatar img {
+    width: 100%
+  }
+
+  .mod_404 .child_box .child_info {
+    float: none;
+    width: auto;
+    font-size: 20px
+  }
+
+  .mod_404 .child_box .child_info .info_desc {
+    height: auto
+  }
+
+  .mod_404 .child_box .child_info .info_name {
+    font-size: 30px
+  }
+
+  .mod_404 .child_box .link_view {
+    position: static
+  }
+
+  .mod_404 .child_bottom .bottom_logo {
+    margin-bottom: 20px
+  }
+
+  .mod_404 .child_box .link_view {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    margin: 20px 0;
+    overflow: hidden;
+    background: #6eaf08;
+    color: #fff;
+    font-size: 20px
+  }
+
+  .mod_404_children {
+    padding-bottom: 40px
+  }
+
+  .mod_404_children li {
+    width: 16.66%;
+    margin: 0;
+    border-radius: 0;
+    text-align: center
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .mod_404 .child_box .child_info .info_name {
+    font-size: 24px
+  }
+
+  .mod_404 .child_box .child_info {
+    font-size: 18px
+  }
+
+  .mod_404_children ul {
+    white-space: nowrap;
+    margin-left: -10px;
+    text-align: center
+  }
+
+  .mod_404_children li {
+    width: 13%;
+    height: auto;
+    margin: 0 5px;
+    overflow: visible;
+    border: 0;
+    border-radius: 0
+  }
+
+  .mod_404_children li.current {
+    outline: 5px solid #6eaf08
+  }
+
+  .mod_404_children li a {
+    display: inline-block;
+    width: 100%;
+    height: auto
+  }
+
+  .logo_list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+
+  .logo_list > li {
+    display: block
+  }
+
+  .logo_list > li > a > img {
+    height: 17px
+  }
+
+  .mod_404_children li a img {
+    width: 100%;
+    height: auto
+  }
+}
