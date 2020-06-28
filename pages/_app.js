@@ -3,6 +3,9 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {Layout, Icon, Row, Col, BackTop} from 'antd';
 
+import { Provider } from 'react-redux';
+import store from '../redux/store/index'
+
 import 'antd/dist/antd.less';
 
 import Header from '../components/layouts/header';
@@ -42,6 +45,7 @@ export default class MyApp extends App {
     const contentLayout = {xxl: 20, xl: 19, lg: 19, sm: 24, xs: 24};
     /* 把pageProps解构后传递给组件 */
     return (
+    <Provider store={store}>
       <Layout className="app-container">
         <Header />
         <Row className="main-wrapper">
@@ -60,6 +64,7 @@ export default class MyApp extends App {
           </Col>
         </Row>
         <BackTop target={() => document.querySelector('.content-wrapper')}/>
-      </Layout>);
+      </Layout>
+    </Provider>);
   }
 }

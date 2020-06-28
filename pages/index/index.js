@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Timeline, Icon, Form, Select, Row, Col} from 'antd';
 import CardItem from '../../components/card_item/index.tsx';
 
+import {loginUser} from '../../redux/todos/index';
+import { connect } from 'react-redux';
 
 import './index.less';
 
@@ -63,4 +65,24 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+//redux
+function mapStateToProps(state) {
+  console.log("ggggggg",state.todos);
+  return {data: state.todos};
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    getUsers: (params) => dispatch(loginUser(params)),
+    deleteUser: (params) => {
+      return dispatch(loginUser(params)).then(()=> {
+        dispatch(loginUser());
+      });
+    },
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(HomePage);
