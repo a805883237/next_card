@@ -2,8 +2,6 @@ import fetch from 'isomorphic-unfetch'
 
 const BASE_URL = 'http://localhost:6060';
 
-
-
 function check200(res) {
   if (res.code != 200) {
     return Promise.reject(res);

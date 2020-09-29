@@ -19,7 +19,7 @@ const HeaderLeft = ({ navList }) => {
   return (
     <div className="header-left">
       <i className="iconfont icon-airplane" style={{ color: '#055796' }} />
-      <span className="blog-name">andd cards</span>
+      <span className="blog-name">andd blogs</span>
     </div>
   )
 }

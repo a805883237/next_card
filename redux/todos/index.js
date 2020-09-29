@@ -1,4 +1,4 @@
-import eFetch from '../../utils/eFetch';
+import eFetch from '../../utils/EFetch';
 import { message } from 'antd';
 
 export function receiveLogout() {

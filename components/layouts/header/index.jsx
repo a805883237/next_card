@@ -12,7 +12,7 @@ const navList = [
   {
     icon: 'home',
     title: '首页',
-    link: '/'
+    link: '/home'
   },
   {
     icon: 'file-add',

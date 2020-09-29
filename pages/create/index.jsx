@@ -35,6 +35,9 @@ const renderFormLabel = (label, tip) => {
 };
 
 class CreateForm extends Component {
+  constructor(prop){
+    super(prop);
+  }
   
   render() {
     const { getFieldDecorator } = this.props.form;

@@ -14,11 +14,22 @@ app.prepare().then(() => {
   const server = express();
   // const parsedUrl = parse(req.url, true)
   // const { pathname, query } = parsedUrl
-  
-  server.get('/', (req, res) => {
-    const actualPage = '/home';
-    app.render(req, res, actualPage)
-  });
+
+  // 将路径A，导向路径B
+  // server.get('/a', (req, res) => {
+  //   return app.render(req, res, '/b', req.query)
+  // })
+
+  // 设置路由重定向
+  // const redirects = [
+  //   { from: '/old-link-1', to: '/new-link-1' },
+  //   { from: '/old-link-2', to: 'https://externalsite.com/new-link-2' },
+  // ]
+  // redirects.forEach(({ from, to, type = 301, method = 'get' }) => {
+  //   server[method](from, (req, res) => {
+  //     res.redirect(type, to)
+  //   })
+  // })
   
   server.get('*', (req, res) => {
     return handle(req, res)
@@ -32,3 +43,9 @@ app.prepare().then(() => {
   console.error(ex.stack);
   process.exit(1)
 });
+
+// 报错退出进程
+// process.on('unhandledRejection', error => {
+//   console.error('unhandledRejection', error);
+//   process.exit(1) // To exit with a 'failure' code
+// });

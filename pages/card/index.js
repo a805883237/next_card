@@ -67,7 +67,6 @@ class HomePage extends Component {
 
 //redux
 function mapStateToProps(state) {
-  console.log("ggggggg",state.todos);
   return {data: state.todos};
 }
 

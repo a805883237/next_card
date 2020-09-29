@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import EFetch from "../utils/efetch";
+import EFetch from "../utils/EFetch";
 import { Alert } from 'antd';
 
 import './txgy.less';
